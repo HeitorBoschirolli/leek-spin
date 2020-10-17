@@ -47,7 +47,7 @@ const Stopwatch = () => {
     }, []);
 
     return (
-        <StyledHeader>{ duration }</StyledHeader>
+        <StyledHeader>You've been spinning for { duration }</StyledHeader>
     );
 };
 

@@ -14,10 +14,10 @@ const stringifyNumberWithTwoDigits = (num) => {
 }
 
 const getMinutesFromSeconds = (seconds) =>
-    Math.floor((seconds / (1000 * 60))) % 60;
+    Math.floor(seconds / 60) % 60;
 
 const getHoursFromSeconds = (seconds) =>
-    Math.floor((seconds / (1000 * 60 * 60))) % 60;
+    Math.floor(seconds / (60 * 60)) % 60;
 
 const updateInterval = (startTime, setDuration) => {
     const elapsedTimeInSeconds = getElapsedTimeInSeconds(startTime);

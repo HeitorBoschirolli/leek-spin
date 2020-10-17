@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { StyledHeader } from './styled';
+import { CenteredTextDiv, StyledHeader } from './styled';
 
 const getElapsedTimeInSeconds = (startTime) => {
     const elapsedTime = (new Date()) - startTime;
@@ -47,7 +47,9 @@ const Stopwatch = () => {
     }, []);
 
     return (
-        <StyledHeader>You've been spinning for { duration }</StyledHeader>
+        <CenteredTextDiv>
+            <StyledHeader>You've been spinning for { duration }</StyledHeader>
+        </CenteredTextDiv>
     );
 };
 
